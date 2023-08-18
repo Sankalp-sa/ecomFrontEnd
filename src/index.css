@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto:wght@300&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+/* font-family: 'Roboto Condensed', sans-serif; */
+/* font-family: 'DM Serif Display', serif; */
+
+/* Navbar */
+
+.navbar {
+  /* font-family: "Roboto Condensed", sans-serif; */
+  padding: 1% 5%;
+  font-size: 1.5rem;
+  list-style: 26px;
+  text-transform: uppercase;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid #ffa000;
+}
+
+/* Register */
+
+.register{
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+#regiterDiv{
+  border-radius: 10px;
+  padding: 20px;
+  /* give box show to form in all the three direction */
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* Footer */
+
+#footer {
+  font-family: 'Roboto', sans-serif;
+  bottom: 0;
+  width: 100%;
+  background: #000000; 
+}
+
+/* Product */
+
+.product-card-link{
+  text-decoration: none !important;
+  color: black !important;
+}
+
+/* 404 page not found */
+
+#mainPnf{
+  display: table;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+  color: #888;
+}
+
+.fof{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1{
+  font-size: 6rem;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type .5s alternate infinite;
+}
+
+@keyframes type{
+  from{box-shadow: inset -3px 0px 0px #888;}
+  to{box-shadow: inset -3px 0px 0px transparent;}
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title {
+  font-size: 4.2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.landing-text{
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn{
+  font-family: 'Roboto', sans-serif;
+}
+
+/* card */
+
+.card-img-top{
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  min-height: 20rem;
+  aspect-ratio: 8/9;
+  object-fit: cover;
+  object-position: center;
+  transition: 200ms transform ease-in-out;
+}
+
+.card{
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.22); 
+  overflow: hidden;
+}
+
+.card-img-div{
+  overflow: hidden;
+}
+
+.card:hover > .card-img-div > .card-img-top{
+  transform: scale(1.1);
+}
+
+.hr-line{
+  border-top: 1px solid red;
+  top: 50%;
+}
+
+/* Checkout btn */
+
+#checkoutbtn{
+  margin-left: 73.7%;
+  border-radius: 0;
+}
